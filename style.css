@@ -1,77 +1,129 @@
 /* ******* Google Fonts ******* */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lobster&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lobster&family=Work+Sans:wght@300;400;500;600;700&display=swap");
 
 /* ******* Custom CSS ******* */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Work Sans', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
 }
 
-.primary-btn{
-    background-color: #fff;
-    padding: 15px 25px;
-    border: 1px solid #005fac;
-    outline: none;
-    color: #005fac;
-    font-weight: 600;
-    text-transform: capitalize;
-    font-size: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: .3s;
+.primary-btn {
+  background-color: #fff;
+  padding: 15px 25px;
+  border: 1px solid #005fac;
+  outline: none;
+  color: #005fac;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.primary-btn:hover{
-    background-color: inherit;
-    border: 1px solid #ffff;
-    color: #fff;
+.primary-btn:hover {
+  background-color: inherit;
+  border: 1px solid #ffff;
+  color: #fff;
+}
+
+section {
+  width: 1140px;
+  margin: 0 auto;
+  margin-top: 130px;
 }
 
 /* ******* Header Section CSS ******* */
 
-header{
-    height: 100vh;
-    background: url(./images/banner/banner3.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+header {
+  height: 100vh;
+  background: url(./images/banner/banner3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
-.header-text{
-    width: 525px;
-    margin-top: 216px;
-    margin-right: 230px;
-   display: flex;
-   flex-direction: column;
-   align-items: flex-end;
-   
+.header-text {
+  width: 525px;
+  margin-top: 216px;
+  margin-right: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-.header-text h1{
-    font-size: 65px;
-    font-weight: 700;
-    color: #fff;
-    text-transform: capitalize;
-    text-align: right;
+.header-text h1 {
+  font-size: 65px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: capitalize;
+  text-align: right;
 }
 
-
-.header-text p{
-    font-size: 16px;
-    font-weight: 400;
-    text-align: right;
-    color: #fff;
-    margin: 20px 0;
+.header-text p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: right;
+  color: #fff;
+  margin: 20px 0;
 }
 
-.header-text button{
-    right: 0;
-    margin-bottom: 188px;
+.header-text button {
+  right: 0;
+  margin-bottom: 188px;
+}
+
+/* ******* Failure Standby CSS ******* */
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.content-img {
+  width: 560px;
+}
+
+.content-img img {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.content-text {
+  width: 450px;
+}
+
+.content-text h2 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #151414;
+}
+
+.content-text article {
+  font-size: 18px;
+  color: #444343;
+  margin: 24px 0;
+}
+
+.content-text ul li {
+  list-style-type: none;
+  font-size: 17px;
+  color: #444343;
+  margin-top: 10px;
+}
+
+.content-text ul li i {
+  margin-right: 10px;
+  color: red;
 }
