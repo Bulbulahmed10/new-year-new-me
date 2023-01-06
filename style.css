@@ -1,0 +1,77 @@
+/* ******* Google Fonts ******* */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lobster&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+/* ******* Custom CSS ******* */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.primary-btn{
+    background-color: #fff;
+    padding: 15px 25px;
+    border: 1px solid #005fac;
+    outline: none;
+    color: #005fac;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.primary-btn:hover{
+    background-color: inherit;
+    border: 1px solid #ffff;
+    color: #fff;
+}
+
+/* ******* Header Section CSS ******* */
+
+header{
+    height: 100vh;
+    background: url(./images/banner/banner3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.header-text{
+    width: 525px;
+    margin-top: 216px;
+    margin-right: 230px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   
+}
+
+.header-text h1{
+    font-size: 65px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: right;
+}
+
+
+.header-text p{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.header-text button{
+    right: 0;
+    margin-bottom: 188px;
+}
