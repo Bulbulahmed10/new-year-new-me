@@ -1,6 +1,6 @@
 /* ******* google Fonts ******* */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lobster&family=Work+Sans:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Work+Sans:wght@300;400;500;600;700&display=swap');
 
 /* ******* custom CSS ******* */
 
@@ -30,6 +30,27 @@
   background-color: inherit;
   border: 1px solid #ffff;
   color: #fff;
+}
+
+.secondary-btn {
+  border: none;
+  outline: none;
+  background-color: #4169e1;
+  padding: 15px 25px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.secondary-btn:hover {
+  background-color: #87a2f5;
+  color: #151414;
 }
 
 section {
@@ -192,26 +213,7 @@ header {
   color: #4169e1;
 }
 
-.consultant-card button {
-  border: none;
-  outline: none;
-  background-color: #4169e1;
-  padding: 15px 25px;
-  color: #fff;
-  text-transform: capitalize;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top: 5px;
-  transition: 0.3s;
-  font-size: 17px;
-}
 
-.consultant-card button:hover {
-  background-color: #87a2f5;
-  color: #151414;
-}
 
 /* ******* our sponsor section CSS ******* */
 
@@ -227,4 +229,64 @@ header {
   height: 128px;
   object-fit: cover;
   margin: 30px;
+}
+
+/* ******* contact section CSS ******* */
+
+.contact-section{
+  background-image: url(./images/watch.png), url(./images/gradient1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode:overlay;
+  border-radius: 5px;
+}
+
+.contact-section div{
+  width: 459px;
+  margin: 59px 0 20px 64px ;
+}
+
+.contact-section div h4{
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  
+}
+
+.contact-section div button{
+  margin: 20px 0;
+}
+
+/* ******* footer section CSS ******* */
+
+footer{
+  background-color: #151414;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 375px;
+  margin-top: 130px;
+}
+
+.footer-left{
+  width: 485px;
+}
+
+.footer-left h1{
+  font-family: 'Lobster', cursive;
+  letter-spacing: 3px;
+  font-size: 45px ;
+  color: #4169e1;
+}
+
+.footer-left article, span{
+  font-size: 16px;
+  color: #fff;
+  display: block;
+  margin-top: 15px;
+}
+
+.footer-right{
+  display: flex;
+  flex-direction: column;
 }
