@@ -1,6 +1,6 @@
 /* ******* google Fonts ******* */
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Work+Sans:wght@300;400;500;600;700&display=swap");
 
 /* ******* custom CSS ******* */
 
@@ -213,8 +213,6 @@ header {
   color: #4169e1;
 }
 
-
-
 /* ******* our sponsor section CSS ******* */
 
 .sponsor-container {
@@ -233,33 +231,32 @@ header {
 
 /* ******* contact section CSS ******* */
 
-.contact-section{
+.contact-section {
   background-image: url(./images/watch.png), url(./images/gradient1.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-blend-mode:overlay;
+  background-blend-mode: overlay;
   border-radius: 5px;
 }
 
-.contact-section div{
+.contact-section div {
   width: 459px;
-  margin: 59px 0 20px 64px ;
+  margin: 59px 0 20px 64px;
 }
 
-.contact-section div h4{
+.contact-section div h4 {
   font-size: 40px;
   font-weight: 700;
   color: #fff;
-  
 }
 
-.contact-section div button{
+.contact-section div button {
   margin: 20px 0;
 }
 
 /* ******* footer section CSS ******* */
 
-footer{
+footer {
   background-color: #151414;
   color: #fff;
   display: flex;
@@ -268,25 +265,66 @@ footer{
   margin-top: 130px;
 }
 
-.footer-left{
+.footer-left {
   width: 485px;
 }
 
-.footer-left h1{
-  font-family: 'Lobster', cursive;
+.footer-left h1 {
+  font-family: "Lobster", cursive;
   letter-spacing: 3px;
-  font-size: 45px ;
+  font-size: 45px;
   color: #4169e1;
 }
 
-.footer-left article, span{
+.footer-left article,
+span {
   font-size: 16px;
   color: #fff;
   display: block;
   margin-top: 15px;
 }
 
-.footer-right{
+.social-icons img {
+  width: 35px;
+  height: 35px;
+  margin: 20px 10px 0 0;
+  object-fit: cover;
+}
+
+.footer-right {
   display: flex;
   flex-direction: column;
+  width: 325px;
+  padding: 0 5px;
+}
+
+.footer-right h5 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.footer-right input {
+  width: 100%;
+  padding: 15px;
+  margin: 0 0 15px;
+  border: 2px solid rgb(194, 193, 193);
+  outline: none;
+  background-color: inherit;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.footer-right input:focus {
+  border-color: #4169e1;
+}
+
+.footer-right input::placeholder {
+  color: rgb(214, 207, 207);
+}
+
+.footer-right button {
+  width: 170px;
 }
