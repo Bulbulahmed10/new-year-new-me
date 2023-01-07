@@ -232,10 +232,17 @@ header {
 /* ******* contact section CSS ******* */
 
 .contact-section {
-  background-image: url(./images/watch.png), url(./images/gradient1.png);
+  background-image: url(./images/watch.png),
+    linear-gradient(
+      to right,
+      rgba(65, 105, 225, 0.856),
+      rgba(65, 105, 225, 0.034)
+    );
+
   background-position: center;
-  background-repeat: no-repeat;
   background-blend-mode: overlay;
+  background-repeat: no-repeat;
+
   border-radius: 5px;
 }
 
