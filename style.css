@@ -38,6 +38,13 @@ section {
   margin-top: 130px;
 }
 
+.section-heading {
+  text-align: center;
+  font-size: 40px;
+  text-transform: capitalize;
+  color: #151414;
+}
+
 /* ******* header section CSS ******* */
 
 header {
@@ -131,85 +138,93 @@ header {
 
 /* ******* our service section CSS ******* */
 
-.our-service-section h3{
-text-align: center;
-font-size: 40px;
-text-transform: capitalize;
-color: #151414;
-margin-bottom: 55px;
+.consultant-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
 }
 
-.consultant-container{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-   
+.consultant-card {
+  width: 360px;
+  height: 600px;
+  background-color: #fff0f5;
+  text-align: center;
+  border-radius: 5px;
+  margin: 10px 10px;
 }
 
-.consultant-card{
-    width: 360px;
-    height: 600px;
-    background-color: #fff0f5;
-    text-align: center;
-    border-radius: 5px;
+.consultant-card img {
+  width: 360px;
+  height: 320px;
+  object-fit: cover;
+  overflow: hidden;
 }
 
-.consultant-card img{
-    width: 360px;
-    height: 320px;
-    object-fit: cover;
-    overflow: hidden;
+.consultant-card h4 {
+  font-size: 22px;
+  margin: 5px 0;
 }
 
-.consultant-card h4{
-    font-size: 22px;
-    margin: 5px 0;
+.desg {
+  margin-bottom: 5px;
+  color: #cd7f32;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: capitalize;
 }
 
-.desg{
-   margin-bottom: 5px;
-    color: #cd7f32;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 1px;
-text-transform: capitalize;
+.cons-desc {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 0 5px;
 }
 
-.cons-desc{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    padding: 0 5px;
+.rating {
+  margin: 10px 0 5px;
+  color: #f6ab27;
 }
 
-.rating{
-    margin: 10px 0 5px;
-    color: #F6AB27;
+.amount {
+  font-size: 30px;
+  font-weight: 700;
+  color: #4169e1;
 }
 
-.amount{
-    font-size: 30px;
-    font-weight: 700;
-    color: #4169e1;
+.consultant-card button {
+  border: none;
+  outline: none;
+  background-color: #4169e1;
+  padding: 15px 25px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 5px;
+  transition: 0.3s;
+  font-size: 17px;
 }
 
-.consultant-card button{
-    border: none;
-    outline: none;
-    background-color: #4169e1;
-    padding: 15px 25px;
-    color: #fff;
-    text-transform: capitalize;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 5px;
-    transition: .3s;
-    font-size: 17px;
+.consultant-card button:hover {
+  background-color: #87a2f5;
+  color: #151414;
 }
 
-.consultant-card button:hover{
-    background-color: #87a2f5;
-    color: #151414;
+/* ******* our sponsor section CSS ******* */
+
+.sponsor-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sponsor-container img {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  margin: 30px;
 }
