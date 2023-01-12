@@ -348,6 +348,7 @@ span {
 
 /* ********************************* responsive *******************************  */
 
+
 @media screen and (max-width: 576px) {
   /* ******** header ***** */
   .header-text {
@@ -427,6 +428,8 @@ span {
     margin: 10px;
   }
 
+ 
+
   /* ******* footer section CSS ******* */
   footer {
     margin-top: 30px;
@@ -446,10 +449,12 @@ span {
   }
 
   .footer-left {
-    width: 400px;
+    width: 320px;
     padding: 0 10px;
     margin-top: 30px;
   }
+
+  
 
   .social-icons img {
     width: 25px;
@@ -519,7 +524,7 @@ span {
 }
 
 
-@media screen and (min-width: 801px) and (max-width: 992px) {
+@media screen and (min-width: 801px) and (max-width: 1400px) {
   section {
     margin-top: 30px;
   }
