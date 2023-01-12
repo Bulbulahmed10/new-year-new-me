@@ -54,7 +54,7 @@
 }
 
 section {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
   margin-top: 130px;
 }
@@ -69,7 +69,9 @@ section {
 /* ******* header section CSS ******* */
 
 header {
+  max-width: 1600px;
   height: 100vh;
+  margin: 0 auto;
   background: url(./images/banner/banner3.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -119,7 +121,7 @@ header {
 }
 
 .content-img {
-  width: 560px;
+  width: 48%;
 }
 
 .content-img img {
@@ -130,7 +132,7 @@ header {
 }
 
 .content-text {
-  width: 450px;
+  width: 48%;
 }
 
 .content-text h2 {
@@ -166,17 +168,18 @@ header {
 }
 
 .consultant-card {
-  width: 360px;
-  height: 600px;
+  width: 31%;
+  height: 630px;
   background-color: #fff0f5;
   text-align: center;
   border-radius: 5px;
   margin: 10px 10px;
+  padding-bottom: 10px;
 }
 
 .consultant-card img {
   width: 360px;
-  height: 320px;
+  height: 300px;
   object-fit: cover;
   overflow: hidden;
 }
@@ -211,6 +214,10 @@ header {
   font-size: 30px;
   font-weight: 700;
   color: #4169e1;
+}
+
+.consultant-card button {
+  margin-top: 10px;
 }
 
 /* ******* our sponsor section CSS ******* */
@@ -337,4 +344,232 @@ span {
 
 .footer-right button {
   width: 170px;
+}
+
+/* ********************************* responsive *******************************  */
+
+@media screen and (max-width: 576px) {
+  /* ******** header ***** */
+  .header-text {
+    width: 300px;
+    margin-right: 10px;
+    margin-top: 0;
+  }
+
+  .header-text h1 {
+    font-size: 40px;
+  }
+
+  .header-text p {
+    font-size: 14px;
+  }
+
+  .primary-btn {
+    padding: 10px 15px;
+  }
+
+  /* ******** failure-standby ***** */
+
+  section {
+    margin-top: 30px;
+  }
+
+  .content-container {
+    flex-direction: column;
+  }
+
+  .content-container:nth-of-type(2) {
+    flex-direction: column-reverse;
+  }
+
+  .content-img {
+    width: 100%;
+  }
+
+  .content-img img {
+    height: 400px;
+  }
+
+  .content-text {
+    width: 95%;
+    padding: 20px;
+  }
+  /* ******** consultant-card ***** */
+
+  .consultant-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .consultant-card img {
+    width: 100%;
+  }
+
+  /* ******* our sponsor section CSS ******* */
+
+  .sponsor-container {
+    margin-top: 30px;
+  }
+
+  .sponsor-container img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+  }
+
+  /* ******* contact section CSS ******* */
+
+  .contact-section {
+    border-radius: 0;
+  }
+  .contact-section div {
+    width: 400px;
+    margin: 10px;
+  }
+
+  /* ******* footer section CSS ******* */
+  footer {
+    margin-top: 30px;
+  }
+
+  .footer-section {
+    flex-direction: column-reverse;
+  }
+
+  .footer-right {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .footer-right h5 {
+    margin-bottom: 10px;
+  }
+
+  .footer-left {
+    width: 400px;
+    padding: 0 10px;
+    margin-top: 30px;
+  }
+
+  .social-icons img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 800px) {
+  section {
+    margin-top: 30px;
+  }
+
+  /* ******** header ***** */
+
+  .header-text {
+    margin-right: 20px;
+  }
+  .header-text h1 {
+    font-size: 55px;
+  }
+
+  .header-text p {
+    width: 450px;
+  }
+
+  /* ******** failure-standby ***** */
+  .content-text {
+    padding: 0 10px;
+  }
+
+  /* ******** consultant-card ***** */
+
+  .consultant-container {
+    justify-content: flex-start;
+  }
+  .consultant-card {
+    width: 45%;
+  }
+
+  .consultant-card p {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+  /* ******* our sponsor section CSS ******* */
+
+  .sponsor-container img {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+  }
+
+  /* ******* contact section CSS ******* */
+
+  .contact-section {
+    border-radius: 0;
+  }
+
+  /* ******* footer section CSS ******* */
+  footer {
+    margin-top: 30px;
+    padding: 0 10px;
+  }
+
+  .footer-left article {
+    padding-right: 10px;
+  }
+}
+
+
+@media screen and (min-width: 801px) and (max-width: 992px) {
+  section {
+    margin-top: 30px;
+  }
+
+  /* ******** header ***** */
+
+  .header-text {
+    margin-right: 20px;
+  }
+
+  /* ******** failure-standby ***** */
+  .content-text {
+    padding: 0 10px;
+  }
+
+    /* ******** consultant-card ***** */
+
+    .consultant-container {
+      justify-content: flex-start;
+    }
+    .consultant-card {
+      flex: 1;
+  
+    }
+
+    .consultant-card p{
+      font-size: 14px;
+    }
+
+    /* ******* our sponsor section CSS ******* */
+
+  .sponsor-container img {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+  }
+
+  /* ******* contact section CSS ******* */
+
+  .contact-section {
+    border-radius: 0;
+  }
+
+  /* ******* footer section CSS ******* */
+  footer {
+    margin-top: 30px;
+    padding: 0 10px;
+  }
+
+  .footer-left article {
+    padding-right: 10px;
+  }
 }
